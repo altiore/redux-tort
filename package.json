@@ -1,0 +1,42 @@
+{
+  "name": "redux-tort",
+  "version": "0.0.1",
+  "description": "This library simplify work with redux",
+  "keywords": [
+    "react",
+    "react.js",
+    "redux",
+    "redux-tort"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "new:version": "npm version patch && npm publish && git push origin master && git push --tags",
+    "test": "npm run build",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/altiore/redux-tort.git"
+  },
+  "author": {
+    "name": "Altiore",
+    "url": "https://github.com/altiore"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/altiore/redux-tort/issues"
+  },
+  "homepage": "https://github.com/altiore/redux-tort/issues",
+  "peerDependencies": {
+    "react": "^16.x"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2",
+    "react": "^16.13.1",
+    "typescript": "4.0.2"
+  },
+  "dependencies": {},
+  "sideEffects": false
+}
